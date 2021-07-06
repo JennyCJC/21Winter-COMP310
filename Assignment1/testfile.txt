@@ -1,0 +1,12 @@
+help
+help me
+set x 12
+print x
+set name Jenny
+print name
+set y 15
+print y
+set z
+print z
+run test.txt
+quit

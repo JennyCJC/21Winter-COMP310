@@ -1,0 +1,13 @@
+
+In my code, two libc library calls that do not use system calls are:
+
+- fopen("test.txt", "rt"); which lasted for 42 CPU cycles 
+
+- printf("hi"); which lasted for 43 CPU cycles.
+
+Two libc library calls that do use system calls are:
+
+- int a = 1+2;  which lasted for 2 CPU cycles.
+
+- int b = 120*356;  which lasted for 2 CPU cycles.
+

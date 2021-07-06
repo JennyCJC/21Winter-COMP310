@@ -1,0 +1,68 @@
+For quanta = 2:
+Output: 
+a3
+a3
+b3
+a3
+b3
+b3
+c3
+c3
+d3
+c3
+d3
+d3
+With cycles: 924; 672; 504; 487; 404
+Average number of cycles: 598.2
+
+
+For quanta = 5:
+Output:	
+a2
+a3
+a3
+b3
+c3
+d3
+b3
+c3
+d3
+b3
+c3
+d3
+With cycles: 629; 373; 388; 480; 449
+Average number of cycles: 463.8
+
+
+For quanta = 20:
+Output:	
+a1
+b1
+c1
+d1
+a2
+b2
+c2
+d2
+a3
+b3
+c3
+d3
+With cycles : 534 ; 420; 621; 453; 374
+Average number of cycles: 480.4
+
+
+
+For quanta = 2, variable "a" "b" would be set to a1, b1 first, and after the first quanta finished, "a" "b" would be set to a2, b2, and later on a3, b3. Therefore, when we are trying to print variables, the output would all be updated to the ones in sched3.txt.
+
+For quanta = 5, all variables would be set to the ones in sched1.txt first. In the second quanta, after all variables are set to the values in sched2.txt, the last line it executed would be to print variable "a"'s value, which is a2 at the time. In the third quanta, all variables are set to the values in sched3.txt, and the last line executed was also to print variable "a"'s value, which is "a3" at the time. Afterwards, all variables would have a3 being its value, thus the output would be the ones in sched3.txt.
+
+For quanta = 20, all variables are set and printed before moving on, since there are less than 20 lines each file. 
+
+
+
+The output time is smaller when quanta = 5, since as it requires less time for context switches comparing to when quanta = 2. It is also relatively smaller comparing to when quanta = 20, but the difference isn't that significant to have a conclusion.
+
+
+
+If quanta is actually time rather than lines, it would depend on how much time each line takes to execute, which varies based on the command on each line.

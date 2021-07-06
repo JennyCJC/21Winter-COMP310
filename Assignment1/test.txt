@@ -1,0 +1,5 @@
+help
+run fake.txt
+set success hurray!
+print success
+quit

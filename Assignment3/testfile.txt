@@ -1,0 +1,13 @@
+help
+set mary 10
+set tom 20
+set bob mary
+print mary
+print tom
+print bob
+print bobbie
+run test1.txt
+exec test1.tx test2.txt test3.txt
+exec testhuge1.txt
+exec testhuge2.txt
+quit
